@@ -1,0 +1,29 @@
+{
+  "name": "bf-mode",
+  "version": "0.0.1",
+  "author": "t-shibata",
+  "license": "MIT",
+  "description": "A tiny programming language that supports Language Server Protocol",
+
+  "engines": {
+    "vscode": "^1.78.2"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:brainfuck"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "brainfuck",
+        "extensions": [
+          ".bf"
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "vscode-languageclient": "^7.0.0"
+  },
+  "private": true
+}
